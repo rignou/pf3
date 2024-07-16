@@ -1,0 +1,175 @@
+div#subtitle {
+
+  width: 100%;
+}
+div#subtitle .wrap {
+  max-width: 100%;
+/*! margin-bottom: initial; */
+  margin-bottom: 140px;
+  position: relative;
+}
+div#subtitle .wrap>div.wbutton{
+  
+  position: absolute;
+  z-index: 1;
+   width: 100px;
+  height: 40px;
+  background-color: rgba(247, 247, 247, 0.81);
+  border-radius: 12px;
+ 
+  left: calc(50% - 50px);
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+div#subtitle button{
+  
+  position: static;
+  /*! transform: translate(0,0); */
+}
+div#subtitle .btn_pause{
+    background:url('../img/pause.svg')no-repeat;
+    width: 25px; height: 25px;
+    text-indent: -9999px;
+    border:none;
+    cursor: pointer;
+    outline: none;
+  background-size: contain;
+    order: 2;
+}
+
+div#subtitle .btn_pause.on{
+    background: url('../img/play.svg')no-repeat;
+    width: 25px; height: 25px;
+    text-indent: -9999px;
+    border:none;
+    cursor: pointer;
+    outline: none;
+   background-size: contain;
+}
+
+div#subtitle .wrap ul.slick-dots li{
+  
+  /*! margin: 0 7px; */
+  width: 128px;
+  height: 74px;
+  transition: all ease 0.3s;
+  border-radius: 6px;
+}
+div#subtitle .wrap ul.slick-dots li:hover{
+  box-shadow: 5px 5px 20px #333;
+}
+div#subtitle .wrap ul.slick-dots li.slick-active{
+   width: calc(128px * 1.5);
+  height: calc(74px * 1.5);
+}
+div#subtitle .wrap ul.slick-dots li<img{
+  
+}
+div#subtitle .wrap>div>div{
+
+}
+
+div#subtitle .wrap .slick-dots button{
+  position: static;
+  width: 14px;
+  height: -10px;
+  line-height: initial;
+  color: #fff;
+}
+div#subtitle .wrap .slick-dots button::before{
+  position: static;
+  width: 10px;
+  height: 8px;
+  line-height: initial;
+  color: #fff;
+  display: inline-block;
+  font-size: 10px;
+  /*! border: 1px solid #fff; */
+  /*! border-radius: 50%; */
+  /*! width: 29px; */
+  /*! height: 29px; */
+}
+div#subtitle .wrap .slick-dots li.slick-active button{
+  border: 1px solid #fff;
+  border-radius: 50%;
+  
+  width: 29px;
+  height: 29px;
+}
+div#subtitle .wrap .slick-dots li.slick-active button::before{
+  
+  /*! font-size: 6px; */
+  /*! width: 10px; */
+  /*! height: 5px; */
+}
+div#subtitle .slick-arrow{
+  
+ 
+  transform: translate(0,0);
+}
+div#subtitle .slick-prev{
+ 
+  z-index: 1;
+  left: 18px;
+
+}
+div#subtitle .slick-prev::before{
+  
+  content: '';
+  background-image: url(../img/arrow_back.svg);
+  width: 20px;
+  height: 20px;
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center;
+ 
+  border-radius: 50%;
+  opacity: 0.8;
+  transition: 0.5s;
+}
+div#subtitle .slick-prev:hover::before{
+   opacity: 1;
+}
+div#subtitle .slick-next:hover::before{
+   opacity: 1;
+}
+div#subtitle .slick-next::before{
+  
+  content: '';
+  background-image: url(../img/arrow_forward.svg);
+   width: 20px;
+  height: 20px;
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center;
+  
+  /*! background-color: white; */
+  border-radius: 50%;
+  opacity: 0.8;
+  transition: 0.5s;
+}
+div#subtitle .slick-next:hover::before{
+ 
+}
+div#subtitle .slick-next{
+  right: 27px;
+  z-index: 1;
+  order: 3;
+}
+div#subtitle .wrap img {
+ width: 100%;
+ height: 100%;
+ border-radius: 6px;
+}
+
+div#subtitle .wrap .slick-dots{
+  bottom: -125px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 111px;
+  gap: 2px;
+}
